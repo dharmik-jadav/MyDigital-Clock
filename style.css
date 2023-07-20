@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(to right, #e192bc, #d994cb, #ce98da, #bd9ee8, #a7a4f4, #89affd, #68b9ff, #41c2ff, #00cfff, #00dcfb, #00e7f1, #00f1e2);
+}
+
+h1 {
+  font-size: 40px;
+  font-family: monospace;
+  text-align: center;
+  border-bottom: 3px solid black;
+  color: rgb(72, 225, 6);
+}
+
+.for-outside-div {
+  /* margin: auto; */
+  top: 230px;
+  display: flex;
+  justify-content: center;
+}
+
+#for-area {
+  width: 700px;
+  height: 125px;
+  font-size: 92px;
+  margin-top: 250px;
+  text-align: center;
+  color: white;
+  font-family: 'Orbitron',
+    sans-serif;
+  position: relative;
+  font-weight: 900;
+  animation: Myanimation 3s ease;
+  color: rgb(0, 0, 0);
+  border: 6px ridge red;
+
+}
+
+@keyframes Myanimation {
+  0% {
+    border: 4px solid black;
+    rotate: 100deg;
+  }
+
+  50% {
+    border: 4px solid purple;
+  }
+
+  100% {
+    border: 4px solid red;
+  }
+
+}
+
+/* For resposive websites */
+@media screen and (min-width: 200px) and (max-width: 480px) {
+
+  #for-area {
+    font-size: 40px;
+    height: 60px;
+    width: 600px;
+  }
+}
